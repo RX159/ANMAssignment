@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/Earthquake.css">
+    <h1>Buscador de Terremotos</h1>
+    <input class = 'input_wrap' id="lugar" type="text" name="Lugar" placeholder="Ciudad o Lugar a buscar">
+    <span id="lugar-empty" class="error hidden">Necesito una ciudad o lugar</span>
+    <button id="btn_Busqueda">Buscar</button>
+    
+    <title>Geolocation</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+  </head>
+<body>
+
+    <section id="container-form">
+    </section>
+    <script src="js/lib/jquery.js" type="text/javascript"></script>
+    <script src="js/Buscar.js" type="text/javascript"></script>
+    <div id="map"></div>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqHamcVGWxnzqJ9XQuKy_8rWhaNvWwqdA&callback=initMap">
+    </script>
+  </body>
+</html>
